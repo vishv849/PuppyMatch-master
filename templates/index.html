@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Match</title>
+</head>
+
+<body>
+  
+
+    <section class="flex items-center py-2 bg-stone-100 xl:h-screen font-poppins dark:bg-gray-800 ">
+        <div class="justify-center flex-1 max-w-6xl  mx-auto lg:py-6 md:px-6">
+            <div class="flex flex-wrap ">
+                <div class="w-full px-4  lg:w-1/2 lg:mb-0">
+                    <div class="relative">
+                        <img src="https://static.vecteezy.com/system/resources/previews/009/551/676/non_2x/shy-dog-logo-illustration-depicting-shy-dog-suitable-for-pet-company-free-vector.jpg"
+                            alt=""
+                            class="relative z-40 object-cover w-full h-30 lg:rounded-tr-[80px] lg:rounded-bl-[80px] rounded">
+                        <div
+                            class="absolute z-10 hidden w-full h-full bg-blue-400 rounded-bl-[80px] rounded -bottom-6 right-6 lg:block">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
+                    <div class="relative">
+                        <h1
+                            class="absolute -top-20   left-0 text-[20px] lg:text-[100px] text-gray-900 font-bold  dark:text-gray-200 opacity-5 md:block hidden">
+                            About Us
+                        </h1>
+                        <h1 class="pl-2 text-3xl font-bold border-l-8 border-blue-400 md:text-5xl dark:text-white">
+                            Welcome to puppy match
+                        </h1>
+                    </div>
+                    <p class="mt-6 mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
+                        Are you ready to experience the magic of love this Valentine's season? Look no further! Our
+                        unique matchmaking platform is designed exclusively for KJ Somaiya Students, providing a fun and
+                        exciting way to find your perfect match. Whether you're seeking a special someone for a romantic
+                        date or a delightful companion for a fun night out, <b>Puppy Match</b> is here to make your
+                        heart skip a beat.
+                    </p>
+                    <div class="flex gap-5">
+                        <a href="{{ url_for('register') }}"
+                        class="px-4 py-3 text-gray-50 transition-all transform bg-yellow-900	font-bold rounded-xl hover:bg-yellow-900	 dark:hover:text-gray-100 dark:text-gray-100 ">
+                        Sign Up </a>
+                        <a href="{{ url_for('work') }}"
+                        class="px-4 py-3 text-gray-50 transition-all transform bg-blue-500	font-bold rounded-xl hover:bg-blue-900	 dark:hover:text-gray-100 dark:text-gray-100 ">
+How It Works                  </a>
+<a href="{{ url_for('comment') }}"
+class="px-4 py-3 text-gray-50 transition-all transform bg-yellow-900	font-bold rounded-xl hover:bg-yellow-900	 dark:hover:text-gray-100 dark:text-gray-100 ">
+Comments                 </a>
+                    </div>
+                    <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
+                        <!-- ... (existing code) ... -->
+    
+                        <!-- New section for contact information -->
+                        <div class="mt-20 flex flex-col gap-2 bg-gray-200 p-10 w-full h-full">
+                            <h2 class="text-xl font-bold text-black dark:text-white">Contact Us for Help</h2>
+                            <p class="mt-2 text-base leading-7 text-gray-500 dark:text-gray-400">
+                                If you need assistance or have any questions, feel free to reach out to us:
+                            </p>
+                            <!-- Add your email and Instagram ID here -->
+                            <div class="flex gap-10 justify-center "><p class="mt-2 text-base leading-7 text-gray-500 dark:text-gray-400">
+                                <a href="mailto:info.puppymatch@email.com" class="text-blue-500">  <img src="https://cdn.iconscout.com/icon/free/png-256/free-email-529-431258.png"  class="w-10 h-10"> </a>
+                              </p>
+                              <p class="mt-2 text-base leading-7 text-gray-500 dark:text-gray-400">
+                                  <a href="https://www.instagram.com/info.puppymatch/" class="text-blue-500" target="_blank"><img src="https://static-00.iconduck.com/assets.00/instagram-fill-icon-2048x2048-129c4vdo.png" class="h-10 w-10" alt=""></a>
+                              </p></div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
